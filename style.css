@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: #080808;
     color: #fff;
@@ -61,17 +65,17 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
-.hearder-text {
+.header-text {
     margin-top: 20%;
     font-size: 30px;
 }
 
-.hearder-text h1 {
+.header-text h1 {
     font-size: 60px;
     margin-top: 20px;
 }
 
-.hearder-text h1 span {
+.header-text h1 span {
     color: #ff004f;
 }
 
@@ -211,23 +215,23 @@ nav ul li a:hover::after {
     margin-top: 50px;
 }
 
-.work{
+.work {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
 }
 
-.work img{
+.work img {
     width: 100%;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
 }
 
-.layer{
+.layer {
     width: 100%;
     height: 0%;
-    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -243,12 +247,12 @@ nav ul li a:hover::after {
     transition: height 0.5s;
 }
 
-.layer h3{
+.layer h3 {
     font-weight: 500;
     margin-bottom: 20px;
 }
 
-.layer a{
+.layer a {
     margin-top: 20px;
     color: #ff004f;
     text-decoration: none;
@@ -261,15 +265,15 @@ nav ul li a:hover::after {
     text-align: center;
 }
 
-.work:hover img{
+.work:hover img {
     transform: scale(1.1);
 }
 
-.work:hover .layer{
+.work:hover .layer {
     height: 100%;
 }
 
-.btn{
+.btn {
     display: block;
     margin: 50px auto;
     width: fit-content;
@@ -281,34 +285,34 @@ nav ul li a:hover::after {
     transition: background 0.5s;
 }
 
-.btn:hover{
+.btn:hover {
     background: #ff004f;
 }
 
 /* ---------Contact--------- */
-.contact-left{
+.contact-left {
     flex-basis: 35%;
 }
 
-.contact-right{
+.contact-right {
     flex-basis: 60%;
 }
 
-.contact-left p{
+.contact-left p {
     margin-top: 30px;
 }
 
-.contact-left p i{
+.contact-left p i {
     color: #ff004f;
     margin-right: 15px;
     font-size: 25px;
 }
 
-.social-icons{
+.social-icons {
     margin-top: 30px;
 }
 
-.social-icons a{
+.social-icons a {
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
@@ -317,21 +321,22 @@ nav ul li a:hover::after {
     transition: transform 0.5s;
 }
 
-.social-icons a:hover{
+.social-icons a:hover {
     color: #ff004f;
     transform: translateY(-5px);
 }
 
-.btn.btn2{
+.btn.btn2 {
     display: inline-block;
     background: #ff004f;
 }
 
-.contact-right form{
+.contact-right form {
     width: 100%;
 }
 
-form input, form textarea{
+form input,
+form textarea {
     width: 100%;
     border: 0;
     outline: none;
@@ -343,7 +348,7 @@ form input, form textarea{
     border-radius: 6px;
 }
 
-form btn2{
+form btn2 {
     padding: 14px 60px;
     font-size: 18px;
     margin-top: 20px;

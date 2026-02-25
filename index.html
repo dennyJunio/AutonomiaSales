@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleMobile.css">
     <script src="https://kit.fontawesone.com/c4254e24a8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
@@ -17,17 +18,19 @@
         <div class="container">
             <nav>
                 <img src="images/logo.png" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfólio</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#porfolio">Portfólio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
-            <div class="hearder-text">
+            <div class="header-text">
                 <p>Engenheiro</p>
-                <h1>Oi, Sou <span>Glauber</span><br> Loureiro e sou do Minas</h1>
+                <h1>Oi, Sou <span>Glauber</span><br>Loureiro e sou do Minas</h1>
             </div>
         </div>
     </div>
@@ -155,7 +158,7 @@
                     <p><i class="fa-solid fa-square-phone"></i>11234251235819</p>
                     <div class="social-icons">
                         <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
                         <a href=""><i class="fa-brands fa-instagram"></i></a>
                         <a href=""><i class="fa-brands fa-linkedin"></i></a>
                     </div>
@@ -189,6 +192,18 @@
             }
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+        function closemenu() {
+            sidemeu.style.right = "-200px";
         }
 
     </script>
